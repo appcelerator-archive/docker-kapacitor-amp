@@ -8,7 +8,7 @@ services:
     environment:
       OUTPUT_INFLUXDB_ENABLED: "true"
       INFLUXDB_URL: "http://influxdb:8086"
-      INPUT_DOCKER_ENABLED: "true"
+      INPUT_CPU_ENABLED: "true"
   influxdb:
     image: appcelerator/influxdb-amp:1.0.0
   kapacitor:
