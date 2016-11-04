@@ -93,6 +93,5 @@ if [[ $nb -lt 1 ]]; then
   exit 1
 fi
 echo "($nb points) [OK]"
-curl $KAPACITOR_HOST:9092/kapacitor/v1/debug/vars 2>/dev/null | jq '.kapacitor | map(select(.name == "ingress") + select(.tags.database == "telegraf") + select(.tags.retention_policy == "default"))'
 
 echo "all tests passed successfully"
