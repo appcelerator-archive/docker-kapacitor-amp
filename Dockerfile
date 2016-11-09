@@ -1,4 +1,4 @@
-FROM appcelerator/kapacitor:kapacitor-1.1.0-rc2
+FROM appcelerator/kapacitor:kapacitor-1.1.0
 ENV INFLUXDB_URL		http://influxdb:8086
 ENV KAPACITOR_HOSTNAME		kapacitor
 ENV SUBSCRIPTION_PROTOCOL	udp
