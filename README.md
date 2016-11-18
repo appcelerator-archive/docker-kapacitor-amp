@@ -13,5 +13,5 @@ Same as [base image](https://github.com/appcelerator/docker-kapacitor)
 
 ## Tags
 
-- `1.1.0`, `latest`
+- `1.1.2`, `latest`
 - `1.0.0`
