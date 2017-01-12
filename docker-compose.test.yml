@@ -1,7 +1,7 @@
 version: '2'
 services:
   telegraf:
-    image: appcelerator/telegraf:telegraf-1.0.1
+    image: appcelerator/telegraf:telegraf-1.1.2
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - /var/run/utmp:/var/run/utmp:ro
@@ -10,7 +10,7 @@ services:
       INFLUXDB_URL: "http://influxdb:8086"
       INPUT_CPU_ENABLED: "true"
   influxdb:
-    image: appcelerator/influxdb-amp:1.0.0
+    image: appcelerator/influxdb-amp:1.1.2
   kapacitor:
     image: appcelerator/kapacitor-amp
     build: .
